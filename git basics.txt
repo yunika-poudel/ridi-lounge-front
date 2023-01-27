@@ -1,0 +1,33 @@
+Uplading for the first time
+
+- Create a repository
+
+
+git init
+Paste the "URL" from the repo and press enter
+git add .
+git status
+git commit -m "source code"
+git push -u origin master
+
+
+
+
+To download the folder or repo
+Command: git clone "Paste the <> Code"
+
+After some changes:
+1) Command: git init
+Either initilize or reinitialize (in the case of previous existence)
+
+2) git status - To see the changes in the project
+if shown in red colour = some changes has been made
+if showin in green colour = no changes has been made
+
+3) git add .  
+(Add all the files for upload)
+
+4) git commit -m "second changes made"
+
+5) git push -u origin master 
+
