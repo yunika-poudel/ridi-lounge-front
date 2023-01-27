@@ -8,13 +8,15 @@
     <meta name="keywords" content="Default Description">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- links to custom styles -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
     <div id="wrapper">
-        <div class="head">
+        <div class = "header-fixed">
             <header class="header">
                 <div class="container">
                     <div class="header-content">
@@ -57,8 +59,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="btn-green header-top-btn">Reserve a Table</button>
-
+                                <button type="button" class="btn-green btn header-top-btn">Reserve a Table</button>
+                                <!-- navbar open btn -->
+                                <button type = "button" class = "navbar-open-btn ms-5">
+                                    <i class = "fas fa-bars"></i>
+                                </button>
                             </div>
                         </div>
                         <!-- end of header top -->
@@ -66,6 +71,9 @@
                 </div>
             </header>
             <nav class="navbar bg-green">
+                <button type = "button" class = "navbar-close-btn">
+                    <i class = "fas fa-times"></i>
+                </button>
                 <div class="container">
                     <div class="navbar-content d-flex align-items-stretch justify-content-between">
                         <div class="nav-list bg-green">
@@ -94,32 +102,142 @@
                 </div>
             </nav>
         </div>
-        <!-- first block -->
-        <section class="first-block">
-            <div class="container">
-                <div class="first-block-items">
-                    <div class="first-block-contents">
-                        <h3 class="text-capitalize">organic food for <span class="d-block">better life</span></h3>
-                        <p class="fw-7 font-montserrat my-55">We serve everything organic</p>
-                        <div class="block-button d-flex">
-                            <button type="button" class="btn-green header-top-btns py-4 px-5 mx-44">Menu</button>
-                            <button type="button" class="btn-green header-top-btn">Reserve a Table</button>
+
+        <section class = "banner">
+            <div class = "banner-video-wrapper">
+                <video autoplay muted id = "banner-video">
+                    <source src = "assets/videos/Video Of Hotel Lounge.mp4" type = "video/mp4">
+                </video>
+            </div>
+
+            <div class = "banner-content-absolute">
+                <div class = "banner-content">
+                    <div class = "banner-content-wrapper text-white">
+                        <h1 class = "font-dm banner-title fw-4 text-start">Organic food for<br> Better Life</h1>
+                        <p class= "mt-3">We serve everything organic</p>
+                        <div class = "btns-group mt-5 d-flex align-items-center">
+                            <button type = "button" class = "btns-group-item btn btn-transparent px-4 me-4">Menu</button>
+                            <button type = "button" class = "btns-group-item btn btn-green">Reserve a Table</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- second-block -->
-        <div class="second-block">
-            <div class="container">
-                <div class="second-block-items">
-                    <div class="second-block-head text-align-center">
-                        <span>our services</span>
+
+        <!-- servces section -->
+        <section class = "sc-services">
+            <div class = "container">
+                <div class = "content">
+                    <div class = "sc-title d-flex align-items-center justify-content-center">
+                        <div class = "line-left"></div>
+                        <h4 class = "fw-700 fs-20 no-wrap">Our Services </h4>
+                        <div class = "line-right"></div>
+                    </div>
+
+                    <div class = "items d-grid">
+                        <div class = "item">
+                            <div class = "item-img">
+                                <img src = "assets/images/pg_index/service-img-1.png" alt = "">
+                            </div>
+                            <div class = "item-text text-center">
+                                <h5 class = "item-title fw-4 fs-32 font-dm py-4">Farm grown organic food</h5>
+                            </div>
+                        </div>
+
+                        <div class = "item">
+                            <div class = "item-img">
+                                <img src = "assets/images/pg_index/service-img-2.png" alt = "">
+                            </div>
+                            <div class = "item-text text-center">
+                                <h5 class = "item-title fw-4 fs-32 font-dm py-4">Farm grown organic food</h5>
+                            </div>
+                        </div>
+
+                        <div class = "item">
+                            <div class = "item-img">
+                                <img src = "assets/images/pg_index/service-img-3.png" alt = "">
+                            </div>
+                            <div class = "item-text text-center">
+                                <h5 class = "item-title fw-4 fs-32 font-dm py-4">Farm grown organic food</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- servces section -->
 
+        <!-- section menu -->
+        <section class = "menu">
+            <div class = "container">
+                <div class = "menu-content">
+                    <div class = "menu-content-wrapper d-flex flex-column align-items-center justify-content-center">
+                        <div class = "menu-img">
+                            <img src = "" alt = "">
+                        </div>
+                        <p>Discover our</p>
+                        <p>menu</p>
+                        <button type = "button" class = "btn btn-white">view menu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section menu -->
+
+        <!-- servces section -->
+        <section class = "sc-opening">
+            <div class = "container">
+                <div class = "content">
+                    <div class = "sc-title d-flex align-items-center justify-content-center">
+                        <div class = "line-left"></div>
+                        <h4 class = "fw-700 fs-20 no-wrap">Opening Hours </h4>
+                        <div class = "line-right"></div>
+                    </div>
+
+                    <div class = "items d-grid">
+                        <div class = "item">
+                            <div class = "item-img">
+                                <img src = "assets/images/pg_index/service-img-1.png" alt = "">
+                            </div>
+                            <div class = "item-text text-start py-3 px-5">
+                                <h5 class = "font-dm fw-4 fs-16 ls-04 mb-1">Opening Hours</h5>
+                                <ul>
+                                    <li class = "fw-5 fs-24 ls-04 mb-1">11:00 am - 11:00 pm (Weekdays)</li>
+                                    <li class = "fw-5 fs-24 ls-04 mb-1">11:00 am - 12:00 pm (Weekend)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class = "item">
+                            <div class = "item-img">
+                                <img src = "assets/images/pg_index/service-img-2.png" alt = "">
+                            </div>
+                            <div class = "item-text text-start py-3 px-5">
+                                <h5 class = "font-dm fw-4 fs-16 ls-04 mb-1">Opening Hours</h5>
+                                <ul>
+                                    <li class = "fw-5 fs-24 ls-04 mb-1">11:00 am - 11:00 pm (Weekdays)</li>
+                                    <li class = "fw-5 fs-24 ls-04 mb-1">11:00 am - 12:00 pm (Weekend)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class = "item">
+                            <div class = "item-img">
+                                <img src = "assets/images/pg_index/service-img-3.png" alt = "">
+                            </div>
+                            <div class = "item-text text-start py-3 px-5">
+                                <h5 class = "font-dm fw-4 fs-16 ls-04 mb-1">Opening Hours</h5>
+                                <ul>
+                                    <li class = "fw-5 fs-24 ls-04 mb-1">11:00 am - 11:00 pm (Weekdays)</li>
+                                    <li class = "fw-5 fs-24 ls-04 mb-1">11:00 am - 12:00 pm (Weekend)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- servces section -->
     </div>
 
 
