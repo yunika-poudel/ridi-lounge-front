@@ -1,14 +1,6 @@
-Uplading for the first time
-
-- Create a repository
 
 
-git init
-Paste the "URL" from the repo and press enter
-git add .
-git status
-git commit -m "source code"
-git push -u origin master
+
 
 
 
@@ -20,14 +12,27 @@ After some changes:
 1) Command: git init
 Either initilize or reinitialize (in the case of previous existence)
 
-2) git status - To see the changes in the project
+2) git status
+To see the changes in the project
 if shown in red colour = some changes has been made
 if showin in green colour = no changes has been made
 
 3) git add .  
-(Add all the files for upload)
+(Add all the files for upload)\
 
-4) git commit -m "second changes made"
+4) git commit -m "text to describe changes"
 
-5) git push -u origin master 
+5) git pull 
+To pull or be updated about the changes made by other 
+6) git push -u origin master
 
+master branch
+
+
+
+git branch dev - branch creation
+git branch - viewing all the branches
+git checkout 'branch name" - to change the branch
+
+To upload on the basis of branch name
+git push -u origin "branch name"
